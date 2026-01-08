@@ -43,7 +43,13 @@ class ScheduleConfig(BaseModel):
 # Database Manager
 class DatabaseManager:
     def __init__(self, db_name="tech_news.db"):
-        self.db_name = db_name
+        # Check if running on Render with disk (path variable or check existence)
+        # Using a fixed path for Render disk mount if available
+        render_disk_path = "/var/data/tech_news.db"
+        if os.path.exists("/var/data"):
+             self.db_name = render_disk_path
+        else:
+             self.db_name = db_name
         self.init_db()
     
     def init_db(self):
