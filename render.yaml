@@ -7,8 +7,6 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.0
-      - key: INSTAGRAM_ACCESS_TOKEN
-        sync: false
       - key: LINKEDIN_ACCESS_TOKEN
         sync: false
       - key: LINKEDIN_PERSON_ID

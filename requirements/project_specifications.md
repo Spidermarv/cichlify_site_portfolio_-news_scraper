@@ -37,9 +37,7 @@ It runs on a schedule to gather high-interest tech news and publish them to prof
 - **LinkedIn**:
   - Uses v2 API (`ugcPosts`)
   - Posts as Person (requires `LINKEDIN_PERSON_ID`)
-- **Instagram**:
-  - Requires Business Account
-  - Uses Facebook Graph API (Placeholder implementation in current code)
+
 
 ### 5. Scheduling
 - **Frequency**: Monday, Thursday, Saturday
@@ -55,7 +53,7 @@ It runs on a schedule to gather high-interest tech news and publish them to prof
 
 ### Environment Variables
 The following environment variables must be set for deployment:
-- `INSTAGRAM_ACCESS_TOKEN`: For authorization with Facebook Graph API.
+
 - `LINKEDIN_ACCESS_TOKEN`: For authorization with LinkedIn API.
 - `LINKEDIN_PERSON_ID`: The URN ID of the LinkedIn profile to post to.
 
