@@ -12,6 +12,7 @@ import requests
 from bs4 import BeautifulSoup
 import schedule
 import json
+import os
 import sqlite3
 from threading import Thread
 import uvicorn
